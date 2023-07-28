@@ -39,3 +39,8 @@ st.plotly_chart(fig)
 
 fig=px.bar(df,x='Churn', y='Balance', title='Balance Distribution - Churn vs. Retained')
 st.plotly_chart(fig)
+
+#correlation matrix
+correlation_matrix=df.corr()
+fig=px.imshow(correlation_matrix, title='Correlation Matrix')
+st.plotly_chart(fig)

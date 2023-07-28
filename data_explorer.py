@@ -64,3 +64,5 @@ selected_feature = st.selectbox("Select a feature to display its distribution:",
 hist_plot = px.histogram(iris_data, x=selected_feature, color="species", nbins=30, marginal="box", hover_data=iris_data.columns)
 st.plotly_chart(hist_plot)
 
+
+st.set_option('deprecation.showPyplotGlobalUse', False)
