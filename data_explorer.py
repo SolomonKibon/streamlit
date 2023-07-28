@@ -3,6 +3,9 @@ import pandas as pd
 import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
+
+st.subheader('By Solomon Kibon')
+
 # Load the Iris dataset from the CSV file
 def load_iris_data():
     url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
